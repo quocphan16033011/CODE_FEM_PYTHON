@@ -5,7 +5,7 @@
 # thêm các thư viện cần thiết
 
 import sys
-sys.path.insert(0,'E:/My file/CODE FEM/Source code')
+sys.path.insert(0,'E:/My file/CODE FEM/Source code/Function')
 
 import numpy as np
 import math as m
@@ -61,7 +61,7 @@ for i in range (0,GDof) :
 	if i % 2 ==0 :		
 		U.append(displacements[i])
 plt.scatter([nodeCoordinates[:,0]],U,s=3.5)
-#plt.show()
+plt.show()
 
 # chuyển vị/lực đầu ra
 outputDisplacementReactions(displacements,stiffness,GDof,prescribedDof)

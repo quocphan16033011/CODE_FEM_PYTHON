@@ -4,7 +4,7 @@
 
 # thêm các thư viện cần thiết
 import sys
-sys.path.insert(0,'E:/My file/CODE FEM/Source code')
+sys.path.insert(0,'E:/My file/CODE FEM/Source code/Function')
 
 import numpy as np
 import math as m
