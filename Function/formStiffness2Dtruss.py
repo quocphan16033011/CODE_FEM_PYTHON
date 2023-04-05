@@ -11,7 +11,7 @@ def formStiffness2Dtruss(GDof,numberElements,elementNodes,numberNodes,nodeCoordi
 		length_element=math.sqrt(xa*xa+ya*ya)
 		c=xa/length_element
 		s=ya/length_element
-		k1=round(EA/length_element,-1)*np.matrix([[c*c,c*s,-c*c,-c*s],[c*s,s*s,-c*s,-s*s],[-c*c,-c*s,c*c,c*s],[-c*s,-s*s,c*s,s*s]])
+		k1=EA/length_element*np.matrix([[c*c,c*s,-c*c,-c*s],[c*s,s*s,-c*s,-s*s],[-c*c,-c*s,c*c,c*s],[-c*s,-s*s,c*s,s*s]])
 		idx=np.ix_(elementDof,elementDof)
 		stiffness[idx]=stiffness[idx]+k1
 	
